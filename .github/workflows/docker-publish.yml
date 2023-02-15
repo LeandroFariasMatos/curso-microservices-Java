@@ -32,13 +32,13 @@ jobs:
         working-directory: ./api-gateway
         run: mvn spring-boot:build-image -DskipTests
         
-      - name: Build Cambio Microservice Jar
+      - name: Build Cambio Container Image
         working-directory: ./cambio-service
-        run: mvn clean package -DskipTests
+        run: mvn spring-boot:build-image -DskipTests
         
-      - name: Build Book Microservice Jar
+      - name: Build Book Container Image
         working-directory: ./book-service
-        run: mvn clean package -DskipTests
+        run: mvn spring-boot:build-image -DskipTests
       
       - name: Docker Compose Build
         working-directory: ./
