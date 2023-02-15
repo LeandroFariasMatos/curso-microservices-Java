@@ -1,0 +1,5 @@
+package com.cambioservice.repository;
+
+public interface CambioRepository {
+
+}

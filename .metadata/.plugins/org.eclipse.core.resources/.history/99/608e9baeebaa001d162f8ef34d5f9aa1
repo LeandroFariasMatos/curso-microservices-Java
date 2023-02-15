@@ -1,0 +1,15 @@
+package com.bookservice.model;
+
+import java.sql.Date;
+
+public class Book {
+	private Long id;
+	private String author;
+	private Date lauchDate;
+	private Double price;
+	private String title;
+	private String currency;
+	private String enviroment;
+	
+	
+}

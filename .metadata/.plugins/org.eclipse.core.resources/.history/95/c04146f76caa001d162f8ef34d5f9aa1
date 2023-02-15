@@ -1,0 +1,5 @@
+package com.cambioservice.model;
+
+public class Cambio {
+
+}
